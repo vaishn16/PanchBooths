@@ -1,0 +1,13 @@
+.bgImage{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/images/universeImage.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+
+
+

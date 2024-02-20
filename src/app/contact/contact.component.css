@@ -1,0 +1,53 @@
+.bgImage{
+    background-image: url('/assets/images/spaceImage.webp');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.labelDesign{
+    color:white
+}
+
+.inputDesign{
+    color:grey;
+    background-color: beige;
+
+}
+
+.container{
+    padding-top: 11%;
+}
+
+.messageButton{
+    background-color: transparent;
+    color: white;
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    height: 60px;
+    border: none;
+    
+}
+
+.messageButton:hover{
+    color:grey;
+}
+
+.messageBox{
+    height:10rem;
+}
+
+.backButton{
+    background-color: transparent;
+    color: white;
+    padding-left: 20px ;
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.backButton:hover{
+    color: grey;
+}

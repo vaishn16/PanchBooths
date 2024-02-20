@@ -1,0 +1,36 @@
+.bgImage{
+    background-image: url('./../../assets/images/BeachImage.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aligning{
+    align-content: center;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.textFix{
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    color: black ;
+  
+}
+
+.backButton{
+    background-color: transparent;
+    color: white;
+    padding-left: 20px ;
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+

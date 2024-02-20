@@ -1,0 +1,61 @@
+<div class="bgImage">
+    <button class="btn backButton" (click)="onBackButton()">Back</button>
+    <div class="container">
+        <h1 style="color:white
+        ;">contact.</h1>
+        <form [formGroup]="contactForm">
+            <div class="form-group">
+                <div class="col-lg-3 col-sm-3">
+                    <label class="labelDesign">Name*</label>
+                    <input type="text" class="form-control inputDesign" formControlName="name">
+                    <small *ngIf="!contactForm.controls['name'].valid && contactForm.controls['name']?.touched" style="color: red;">Name is required</small>
+                    <p> </p>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="labelDesign">Email*</label>
+                        <input type="text" class="form-control inputDesign" formControlName="email">
+                        <small *ngIf="!contactForm.controls['email'].valid && contactForm.controls['email']?.touched" style="color: red;">Email is required</small>
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="labelDesign">Gender</label>
+                        <div>
+                            <input type="radio" class="inputDesigns">
+                            <label class="labelDesign">Does it matter?</label>
+                            <p> </p>
+                        </div>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="labelDesign">Phone</label>
+                        <input type="text" class="form-control inputDesign" formControlName="phone">
+                        <small *ngIf="!contactForm.controls['phone'].valid" style="color: red;">Wrong format!</small>
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="labelDesign">Message*</label>
+                        <textarea cols="30" rows="4" class="form-control inputDesign" formControlName="message" style="width: 100%;"></textarea>
+                        <small *ngIf="!contactForm.controls['message'].valid && contactForm.controls['message']?.touched" style="color: red;">Message is required</small>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn messageButton" (click)="sendMessage()">send a message.</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <p> </p>
+   <p style="padding-left: 14%;  color: white; font-weight: bold;">{{message}}</p>
+</div>
+
+
